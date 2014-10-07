@@ -30,10 +30,10 @@ trait Spaceship {
 
   // Dangerous indirect recuresion, Oh gosh, Normally is terminated when one ship is down
   def engage(o: Spaceship) : Unit = {
-    if( ! isOk ) {
+    if( isOk ) {
       o.beAttacked( pilot.pilotingSkills.map(_.aim), attackPower )
     }
-    if (! o.isOk) o.engage(this)
+    if (o.isOk) o.engage(this)
   }
 
 }

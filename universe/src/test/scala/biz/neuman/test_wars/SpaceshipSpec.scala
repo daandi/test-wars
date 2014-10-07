@@ -23,6 +23,10 @@ class SpaceshipSpec extends Specification {
     "is ok" in new TestShip {
       isOk must beTrue
     }
+    "armor below 0 => ship is not ok" in new TestShip {
+      armor = -1
+      isOk must beFalse
+    }
 
   }
 
