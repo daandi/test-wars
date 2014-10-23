@@ -1,7 +1,0 @@
-[0m[[0minfo[0m] [0m[32mPersonTest:[0m[0m
-[0m[[0minfo[0m] [0m[32mA Person[0m[0m
-[0m[[0minfo[0m] [0m[32m- should be defined[0m[0m
-[0m[[0minfo[0m] [0m[32m- should have a name[0m[0m
-[0m[[0minfo[0m] [0m[32m- should be indifferent of sides when not stated otherwise[0m[0m
-[0m[[0minfo[0m] [0m[32m- should be no Jedi by default[0m[0m
-[0m[[0minfo[0m] [0m[32m- should be able to change sides[0m[0m

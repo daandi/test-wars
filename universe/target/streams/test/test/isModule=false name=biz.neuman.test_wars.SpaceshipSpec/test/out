@@ -1,9 +1,0 @@
-[0m[[0minfo[0m] [0mSpaceshipSpec[37m[0m[0m
-[0m[[0minfo[0m] [0m[37m[0m[37m[0m[0m
-[0m[[0minfo[0m] [0m[37m[0m[37mA Spaceship should[0m[37m[0m[0m
-[0m[[0minfo[0m] [0m[37m[0m[32m+[0m is ok[37m[0m[0m
-[0m[[0minfo[0m] [0m[37m[0m[32m+[0m armor below 0 => ship is not ok[37m[0m[0m
-[0m[[0minfo[0m] [0m[37m[0m[37m[0m[0m
-[0m[[0minfo[0m] [0m[37m[0mTotal for specification SpaceshipSpec[0m
-[0m[[0minfo[0m] [0m[36mFinished in 38 ms[0m[0m
-[0m[[0minfo[0m] [0m[36m[0m[36m2 examples, 0 failure, 0 error[0m[0m
