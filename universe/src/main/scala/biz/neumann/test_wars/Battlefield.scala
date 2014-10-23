@@ -31,14 +31,14 @@ trait Battlefield {
       v <- vessels
       o <- vessels
       if o != v // do not fight against self ;)
-      if o.pilot.side != v.pilot.side
+      if o.side != v.side
     } v engage o
     battleResult(vessels.toVector)
   }
 
   def battleResult(vessels: Seq[Spaceship]) : BattleResult =
     vessels.
-      groupBy(_.pilot.side getOrElse "Neutral").
+      groupBy(_.side.toString).
       mapValues{ vs =>
         val (ok, losses) = vs.partition( _.isOk )
         Map(

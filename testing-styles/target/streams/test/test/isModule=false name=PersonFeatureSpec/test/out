@@ -1,0 +1,14 @@
+[0m[[0minfo[0m] [0m[32mPersonFeatureSpec:[0m[0m
+[0m[[0minfo[0m] [0m[32mAs a Developer [0m[0m
+[0m[[0minfo[0m] [0m[32mI want to have a Person [0m[0m
+[0m[[0minfo[0m] [0m[32mwhich can be part of the Test Wars Universe [0m[0m
+[0m[[0minfo[0m] [0m[32mwhich has defaults and can change sides [0m[0m
+[0m[[0minfo[0m] [0m[32mFeature: Person[0m[0m
+[0m[[0minfo[0m] [0m[32m  Scenario: Creating a Person gives Person with defaults[0m[0m
+[0m[[0minfo[0m] [0m[32m    Given a Person created with just the name [0m[0m
+[0m[[0minfo[0m] [0m[32m    Then the person should have defaults [0m[0m
+[0m[[0minfo[0m] [0m[32mFeature: Keep it interesting[0m[0m
+[0m[[0minfo[0m] [0m[32m  Scenario: A person can change sides[0m[0m
+[0m[[0minfo[0m] [0m[32m    Given Han Solo [0m[0m
+[0m[[0minfo[0m] [0m[32m    When han sees the good in the Rebellion and befriends Luke he changes sides [0m[0m
+[0m[[0minfo[0m] [0m[32m    Then Han is part of the Rebellion [0m[0m

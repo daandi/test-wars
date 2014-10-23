@@ -1,6 +1,6 @@
 package biz.neumann.test_wars.vessels
 
-import biz.neumann.test_wars.{Probability, Person}
+import biz.neumann.test_wars._
 
 import scala.math
 
@@ -13,39 +13,42 @@ import scala.math
  *
  */
 trait Spaceship {
-  def pilot: Person
-  var armor: Int
+  def aim : Probability = Probability(0.5)
+  def evade : Probability = Probability(0.5)
+  def side : Side = Neutral
+  var shield: Int
   def attackPower: Int
 
-  def isOk = armor >= 0
+  def isOk = shield >= 0
 
-  def beAttacked( accuracy: Option[Probability], power: Int )  = {
+  def beAttacked( aim:Probability, power: Int )  =
     if (
-      math.random <= accuracy.map(_.d).getOrElse(0.0) &&
-      math.random >= pilot.pilotingSkills.map(_.evade.d).getOrElse(0.0)
+      math.random <= aim.double &&
+      math.random >= evade.double
     ) {
-      armor = armor - power
+      shield = shield - power
+      if ( !isOk ) println(s"BOOOOM. $this has been destroyed")
     }
-  }
+
 
   // Dangerous indirect recuresion, Oh gosh, Normally is terminated when one ship is down
   def engage(o: Spaceship) : Unit = {
     if( isOk ) {
-      o.beAttacked( pilot.pilotingSkills.map(_.aim), attackPower )
+      o.beAttacked( aim, attackPower )
     }
     if (o.isOk) o.engage(this)
   }
 
 }
 
-case class XWing(pilot: Person = Person.randomRebel) extends Spaceship{
+case class XWing(pilot: Person = Person.randomRebel) extends Spaceship {
   val attackPower = 1
-  var armor = 2
+  var shield = 2
 }
 
 case class TieFighter(pilot: Person = Person.randomImperial) extends Spaceship {
   val attackPower = 2
-  var armor = 1
+  var shield = 1
 }
 
-case class UnknownSpaceship(pilot: Person, var armor: Int, attackPower: Int) extends Spaceship
+case class UnknownSpaceship(pilot: Person, var shield: Int, attackPower: Int) extends Spaceship

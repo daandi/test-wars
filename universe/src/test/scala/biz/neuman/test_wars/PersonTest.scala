@@ -1,6 +1,6 @@
 package biz.neumann.empire
 
-import biz.neumann.test_wars.Person
+import biz.neumann.test_wars.{Neutral, Rebels, Person}
 import org.scalatest.{ShouldMatchers, FlatSpec}
 
 /**
@@ -13,7 +13,7 @@ import org.scalatest.{ShouldMatchers, FlatSpec}
  */
 class PersonTest extends FlatSpec with ShouldMatchers {
 
-  "A pilot" should "be defined" in {
+  "A Person" should "be defined" in {
     // absolute baseline
     // implicitly testing if class is found and can be instanciated at all
     Person("Torkin Daneb")
@@ -24,7 +24,7 @@ class PersonTest extends FlatSpec with ShouldMatchers {
   }
 
   it should "be indifferent of sides when not stated otherwise" in {
-    Person("Torkin Daneb").side should be(None)
+    Person("Torkin Daneb").side should be(Neutral)
   }
 
   it should "be no Jedi by default" in {
@@ -32,20 +32,11 @@ class PersonTest extends FlatSpec with ShouldMatchers {
   }
 
   it should "be able to change sides" in {
-    val han = Person("Torkin Daneb")
-    han.side = Some("Rebels")
-    han.side should not be empty
-    han.side should be( Some("Rebels") )
+    val han = Person("Han Solo")
+    han.side = Rebels
+    han.side should not be Neutral
+    han.side should be( Rebels )
   }
-
-  it should "have no piloting skills by default" in {
-    Person("Torkin Daneb").pilotingSkills should be(None)
-  }
-
-
-
-
-
 
 
 }

@@ -1,0 +1,7 @@
+[0m[[0minfo[0m] [0m[32mPersonTestClassic:[0m[0m
+[0m[[0minfo[0m] [0m[32m- Person can be created without exception[0m[0m
+[0m[[0minfo[0m] [0m[32m- Person is Neutral by default[0m[0m
+[0m[[0minfo[0m] [0m[32m- Person is no Jedi by default[0m[0m
+[0m[[0minfo[0m] [0m[32m- Person has default aiming prob of 50%[0m[0m
+[0m[[0minfo[0m] [0m[32m- Person can change sides ad libitum to the Empire[0m[0m
+[0m[[0minfo[0m] [0m[32m- Person can change sides ad libitum to the Rebels[0m[0m

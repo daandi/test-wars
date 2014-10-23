@@ -12,21 +12,23 @@ import scala.util.Random
  */
 case class Person(
                   name: String,
-                  var side: Option[String] = None,
+                  var side: Side = Neutral,
                   isJedi : Boolean = false,
-                  pilotingSkills : Option[PilotingSkills] = None
+                  aim: Probability = Probability(0.5),
+                  evade: Probability = Probability(0.5)
                 )
 
 object Person {
   def randomRebel : Person =  Person(
     name = "Rebel" + Random.nextInt(),
-    side = Some("Rebels"),
-    pilotingSkills = Some(PilotingSkills(Probability(0.5),Probability(0.5)) )
+    side = Rebels,
+    evade = Probability(0.6)
   )
 
   def randomImperial : Person =  Person(
     name = "Imperial" + Random.nextInt(),
-    side = Some("Imperium"),
-    pilotingSkills = Some(PilotingSkills(Probability(0.4),Probability(0.3)) )
+    side = Empire,
+    evade =  Probability(0.3),
+    aim =  Probability(0.55)
   )
 }

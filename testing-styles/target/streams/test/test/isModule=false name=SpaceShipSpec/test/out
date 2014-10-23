@@ -1,0 +1,22 @@
+[0m[[0minfo[0m] [0mSpaceShipSpec[37m[0m[0m
+[0m[[0minfo[0m] [0m[37mA spaceship[0m[0m
+[0m[[0minfo[0m] [0m[37m  [0m[32m+[0m has shield[37m[0m[0m
+[0m[[0minfo[0m] [0m[37m  [0m[32m+[0m has attack power[37m[0m[0m
+[0m[[0minfo[0m] [0m[37m  [0m[32m+[0m has a aim, which defaults to 50% accuracy[37m[0m[0m
+[0m[[0minfo[0m] [0m[37m  [0m[32m+[0m has a chance to evade, which defaults to 50%[37m[0m[0m
+[0m[[0minfo[0m] [0m[37m  [0m[32m+[0m belongs to a side which by default is Neutral[37m[0m[0m
+[0m[[0minfo[0m] [0m[37m[0m[0m
+[0m[[0minfo[0m] [0m[37mSpaceship Shield[0m[0m
+[0m[[0minfo[0m] [0m[37m  [0m[32m+[0m a ship with shield left is ok[37m[0m[0m
+[0m[[0minfo[0m] [0m[37m  [0m[32m+[0m a ship with shield below 0 is broken[37m[0m[0m
+[0m[[0minfo[0m] [0m[37m  [0m[32m+[0m ship armor can be changed which affects the isOK state[37m[0m[0m
+[0m[[0minfo[0m] [0m[37m[0m[0m
+[0m[[0minfo[0m] [0m[37mSpaceship Battle[0m[0m
+[0m[[0minfo[0m] [0m[37m  [0m[36m*[0m a ship can engage another ship will not end in an endless loop PENDING[37m[0m[0m
+[0m[[0minfo[0m] [0m[37m  [0m[36m*[0m it will not engage if it is not Ok PENDING[37m[0m[0m
+[0m[[0minfo[0m] [0m[37m  after being engaged by another ship it will engage the other ship[0m[0m
+[0m[[0minfo[0m] [0m[37m  it will engage the other ship till one ship is no longer ok[0m[0m
+[0m[[0minfo[0m] [0m[37m[0m[37m[0m[0m
+[0m[[0minfo[0m] [0m[37m[0mTotal for specification SpaceShipSpec[0m
+[0m[[0minfo[0m] [0m[36mFinished in 31 ms[0m[0m
+[0m[[0minfo[0m] [0m[36m[0m[36m10 examples, 0 failure, 0 error, 2 pending[0m[0m

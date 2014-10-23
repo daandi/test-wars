@@ -1,0 +1,9 @@
+[0m[[0minfo[0m] [0m[32mPersonFlatTest:[0m[0m
+[0m[[0minfo[0m] [0m[32mA Person[0m[0m
+[0m[[0minfo[0m] [0m[32m- should be created without exception[0m[0m
+[0m[[0minfo[0m] [0m[32m- should be Neutral by default[0m[0m
+[0m[[0minfo[0m] [0m[32m- should be no Jedi by default[0m[0m
+[0m[[0minfo[0m] [0m[32m- should have default aiming prob of 50%[0m[0m
+[0m[[0minfo[0m] [0m[32mPerson can change sides ad libitum [0m[0m
+[0m[[0minfo[0m] [0m[32m- should to the Empire[0m[0m
+[0m[[0minfo[0m] [0m[32m- should to the Rebels[0m[0m

@@ -8,6 +8,6 @@ package biz.neumann.test_wars
  *
  *
  */
-case class Probability(d : Double) {
-  if (d < 0.0 || d > 1.0 ) throw new Exception(s"Probability has to be between 0 and 1")
+case class Probability(double : Double) {
+  if (double < 0.0 || double > 1.0 ) throw new Exception(s"Probability has to be between 0 and 1")
 }

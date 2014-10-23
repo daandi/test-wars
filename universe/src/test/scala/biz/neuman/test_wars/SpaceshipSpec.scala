@@ -17,23 +17,19 @@ import org.specs2.mutable.Specification
 class SpaceshipSpec extends Specification {
 
   "A Spaceship" should {
-    "have a pilot " in new TestShip {
-      pilot mustEqual anakin
-    }
     "is ok" in new TestShip {
       isOk must beTrue
     }
     "armor below 0 => ship is not ok" in new TestShip {
-      armor = -1
+      shield = -1
       isOk must beFalse
     }
 
   }
 
   class TestShip extends Spaceship with Scope {
-    override def pilot: Person = anakin
     override def attackPower: Int = 10
-    override var armor: Int = 5
+    override var shield: Int = 5
   }
 
   lazy val anakin = Person(name = "Anakin", isJedi = true)

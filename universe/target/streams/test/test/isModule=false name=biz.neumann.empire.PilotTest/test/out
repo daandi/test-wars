@@ -1,0 +1,7 @@
+[0m[[0minfo[0m] [0m[32mPilotTest:[0m[0m
+[0m[[0minfo[0m] [0m[32mA pilot[0m[0m
+[0m[[0minfo[0m] [0m[32m- should be defined[0m[0m
+[0m[[0minfo[0m] [0m[32m- should have a name[0m[0m
+[0m[[0minfo[0m] [0m[32m- should be indifferent when not stated otherwise which side he is on[0m[0m
+[0m[[0minfo[0m] [0m[32m- should be no Jedi by default[0m[0m
+[0m[[0minfo[0m] [0m[32m- should be able to change sides[0m[0m

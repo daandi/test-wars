@@ -1,0 +1,28 @@
+[0m[[0minfo[0m] [0mBattlefieldSpec[37m[0m[0m
+[0m[[0minfo[0m] [0m[37mThe Battelfield[0m[0m
+[0m[[0minfo[0m] [0m[37m  [0m[32m+[0m starts with no ships[37m[0m[0m
+[0m[[0minfo[0m] [0m[37m  [0m[32m+[0m there can be a ship added[37m[0m[0m
+[0m[[0minfo[0m] [0m[37m  [0m[32m+[0m ships are unique and can't be added twice[37m[0m[0m
+[0m[[0minfo[0m] [0m[37m  [0m[32m+[0m the battlefield can be cleaned[37m[0m[0m
+[0m[[0minfo[0m] [0m[37mThe Battle[0m[0m
+[0m[[0minfo[0m] [0m[37m  [0m[32m+[0m no ships no casualties[37m[0m[0m
+[0m[[0minfo[0m] [0m[37m  [0m[37m[33mx[0m ships on the same side don't attack each other[0m[0m
+[0m[[31merror[0m] [0m Map(Neutral -> Map(losses -> 0, ok -> 2))[0m
+[0m[[31merror[0m] [0m [0m
+[0m[[31merror[0m] [0m  is not equal to [0m
+[0m[[31merror[0m] [0m [0m
+[0m[[31merror[0m] [0m Map(Rebels -> Map(losses -> 0, ok -> 2))[0m
+[0m[[31merror[0m] [0m [0m
+[0m[[31merror[0m] [0m Missing values[0m
+[0m[[31merror[0m] [0m Rebels -> Map(losses -> 0, ok -> 2)[0m
+[0m[[31merror[0m] [0m [0m
+[0m[[31merror[0m] [0m Additional values[0m
+[0m[[31merror[0m] [0m Neutral -> Map(losses -> 0, ok -> 2) (BattlefieldSpec.scala:56)[0m
+[0m[[0minfo[0m] [0m[37m[0m[0m
+[0m[[0minfo[0m] [0m[37m  [0m[37m[33mx[0m ships on different sides fight[0m[0m
+[0m[[31merror[0m] [0m List() does not contain 1 (BattlefieldSpec.scala:65)[0m
+[0m[[0minfo[0m] [0m[37m[0m[0m
+[0m[[0minfo[0m] [0m[37m[0m[37m[0m[0m
+[0m[[0minfo[0m] [0m[37m[0mTotal for specification BattlefieldSpec[0m
+[0m[[0minfo[0m] [0m[36mFinished in 250 ms[0m[0m
+[0m[[0minfo[0m] [0m[36m[0m[36m7 examples, 2 failures, 0 error[0m[0m
