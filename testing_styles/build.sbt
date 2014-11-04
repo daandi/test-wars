@@ -1,4 +1,4 @@
-name := """testing-styles"""
+name := """testing_styles"""
 
 version := "1.0"
 

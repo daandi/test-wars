@@ -1,12 +1,12 @@
 import play.PlayScala
 
-name := """test-wars"""
+name := """test_wars"""
 
-version := "0.1-SNAPSHOT"
+version := "0.2"
 
-lazy val testWars = (project in file(".")).enablePlugins(PlayScala).dependsOn(universe)
+lazy val test_wars = (project in file(".")).enablePlugins(PlayScala).dependsOn(universe)
 lazy val universe = (project in file("universe"))
-lazy val testingStyles = (project in file("testing-styles")).dependsOn(universe)
+lazy val testing_styles = (project in file("testing_styles")).dependsOn(universe)
 
 scalaVersion := "2.11.1"
 
