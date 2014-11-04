@@ -1,5 +1,7 @@
+package person
+
 import biz.neumann.test_wars._
-import org.scalatest.{ShouldMatchers, FlatSpec}
+import org.scalatest.{FlatSpec, ShouldMatchers}
 
 /**
  * User: andi

@@ -1,3 +1,5 @@
+package person
+
 import biz.neumann.test_wars._
 import org.specs2.Specification
 
@@ -36,7 +38,6 @@ Person can change sides ad libitum
     anakin.side = Empire
     anakin.side mustEqual Empire
   }
-
   def becomeRebel = {
     val anakin = Person("Han Solo")
     anakin.side mustEqual Neutral
@@ -44,9 +45,6 @@ Person can change sides ad libitum
     anakin.side mustEqual Rebels
   }
 
-
   def person = Person("Honk")
-
-
 
 }

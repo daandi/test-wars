@@ -1,5 +1,7 @@
+package person
+
 import biz.neumann.test_wars._
-import org.scalatest.{GivenWhenThen, FeatureSpec, FunSuite}
+import org.scalatest.{FeatureSpec, GivenWhenThen}
 
 /**
  * User: andi

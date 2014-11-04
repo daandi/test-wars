@@ -1,3 +1,5 @@
+package person
+
 import biz.neumann.test_wars._
 import org.scalatest.FunSuite
 
