@@ -1,8 +1,8 @@
 name := """universe"""
 
-version := "1.0"
+scalaVersion := Commons.scalaVersion
 
-scalaVersion := "2.11.2"
+version := Commons.version
 
 // Change this to another test framework if you prefer
 libraryDependencies ++= Seq(
@@ -11,5 +11,3 @@ libraryDependencies ++= Seq(
 )
 
 resolvers ++= Seq("snapshots", "releases").map(Resolver.sonatypeRepo)
-
-

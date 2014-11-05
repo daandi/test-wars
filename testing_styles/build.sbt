@@ -1,15 +1,15 @@
 name := """testing_styles"""
 
-version := "1.0"
+scalaVersion := Commons.scalaVersion
 
-scalaVersion := "2.11.2"
+version := Commons.version
 
 // Change this to another test framework if you prefer
 libraryDependencies ++= Seq(
   "org.scalatest" %% "scalatest" % "2.1.6" % "test",
-  "org.specs2" % "specs2-core_2.11" % "2.4.6" % "test",
-  "org.specs2" % "specs2-matcher_2.11" % "2.4.6" % "test",
-  "org.scalacheck" % "scalacheck_2.11" % "1.11.6" % "test"
+  "org.specs2" %% "specs2-core" % "2.4.6" % "test",
+  "org.specs2" %% "specs2-matcher" % "2.4.6" % "test",
+  "org.scalacheck" %% "scalacheck" % "1.11.6" % "test"
 )
 
 resolvers ++= Seq("snapshots", "releases").map(Resolver.sonatypeRepo)
