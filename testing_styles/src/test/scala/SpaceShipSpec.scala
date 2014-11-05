@@ -27,7 +27,7 @@ Spaceship Battle
   a ship can engage another ship will not end in an endless loop              $pending
   it will not engage if it is not Ok                                          $pending
   after being engaged by another ship it will engage the other ship
-  it will engage the other ship till one ship is no longer ok
+  it will engage the other ship till one ship is no longer ok                 ${pending}
 """
 
 

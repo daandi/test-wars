@@ -23,21 +23,21 @@ Person default values
 Person can change sides ad libitum
   to the empire                               $becomeEvil
   to Rebels                                   $becomeRebel
-
 """
-
 
   def create = Person("Nobody") must not throwA(new Exception)
   def defaultSide = person.side mustEqual Neutral
   def isTheForceWithHim = person.isJedi must beFalse
   def defaultAim = person.aim mustEqual Probability(0.5)
   def defaultEvade = person.evade mustEqual Probability(0.5)
+
   def becomeEvil = {
     val anakin = Person("Anakin")
     anakin.side mustEqual Neutral
     anakin.side = Empire
     anakin.side mustEqual Empire
   }
+
   def becomeRebel = {
     val anakin = Person("Han Solo")
     anakin.side mustEqual Neutral

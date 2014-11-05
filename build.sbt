@@ -12,7 +12,3 @@ lazy val testing_styles = (project in file("testing_styles")).
 lazy val death_star = (project in file("death_star")).
                         enablePlugins(PlayScala).
                         dependsOn(universe)
-
-libraryDependencies ++= Seq(
-  ws
-)
