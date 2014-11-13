@@ -18,12 +18,12 @@ resolvers ++= Seq("snapshots", "releases").map(Resolver.sonatypeRepo)
 resolvers += "bintray" at "http://dl.bintray.com/scalaz/releases"
 
 //HTMLOutput
-(testOptions in Test) ++= Seq(
-  Tests.Argument(TestFrameworks.Specs2, "html"),
-  Tests.Argument(TestFrameworks.ScalaTest, "-h", "target/scalatest/html")
-)
+//(testOptions in Test) ++= Seq(
+//  Tests.Argument(TestFrameworks.Specs2, "html"),
+//  Tests.Argument(TestFrameworks.ScalaTest, "-h", "target/scalatest/html")
+//)
 
 //XML-Output
-(testOptions in Test) ++= Seq(
-  Tests.Argument(TestFrameworks.ScalaTest, "-u", "target/scalatest/xml")
-)
+//(testOptions in Test) ++= Seq(
+//  Tests.Argument(TestFrameworks.ScalaTest, "-u", "target/scalatest/xml")
+//)
