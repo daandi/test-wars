@@ -1,14 +1,8 @@
-import play.PlayScala
+scalaVersion := "2.11.4"
 
-scalaVersion := Commons.scalaVersion
-
-version := Commons.version
+version := "0.4"
 
 lazy val universe = (project in file("universe"))
 
 lazy val testing_styles = (project in file("testing_styles")).
                             dependsOn(universe)
-
-//lazy val death_star = (project in file("death_star")).
-                        //enablePlugins(PlayScala).
-                        //dependsOn(universe)

@@ -1,8 +1,7 @@
-package biz.neuman.test_wars
+package biz.neuman.test_wars.vessels
 
 import biz.neumann.test_wars.Person
 import biz.neumann.test_wars.vessels.Spaceship
-import org.scalatest.FunSuite
 import org.specs2.matcher.Scope
 import org.specs2.mutable.Specification
 

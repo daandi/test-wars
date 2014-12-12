@@ -63,8 +63,6 @@ Spaceship Battle
     override var shield: Int = -1
   }
 
-
-
   def engageLoop = pending
 
 

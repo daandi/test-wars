@@ -1,7 +1,6 @@
-package biz.neuman.test_wars
+package biz.neuman.test_wars.vessels
 
-import biz.neumann.test_wars.vessels.{XWing, TieFighter, Spaceship}
-
+import biz.neumann.test_wars.vessels.{TieFighter, Spaceship, XWing}
 import org.specs2.Specification
 
 /**

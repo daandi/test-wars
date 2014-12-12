@@ -1,17 +1,8 @@
 package biz.neumann.test_wars.vessels
 
 import biz.neumann.test_wars._
+import org.json4s.native._
 
-import scala.math
-
-/**
- * User: andi
- * Date: 02.10.14
- * Time: 11:12
- *
- *
- *
- */
 trait Spaceship {
   def aim : Probability = Probability(0.5)
   def evade : Probability = Probability(0.5)
@@ -39,16 +30,20 @@ trait Spaceship {
     if (o.isOk) o.engage(this)
   }
 
+  def serialize : String = Serialization.write(this)
 }
 
-case class XWing(pilot: Person = Person.randomRebel) extends Spaceship {
-  val attackPower = 1
-  var shield = 2
+trait SpaceshipCompanion[T <: Spaceship] {
+  import vessels._
+  implicit val manifest: Manifest[T]
+
+  def deserialize(in: String) : T = Serialization.read[T](in)
 }
 
-case class TieFighter(pilot: Person = Person.randomImperial) extends Spaceship {
-  val attackPower = 2
-  var shield = 1
-}
 
-case class UnknownSpaceship(pilot: Person, var shield: Int, attackPower: Int) extends Spaceship
+
+/*case class UnknownSpaceship(pilot: Person, var shield: Int, attackPower: Int) extends Spaceship {
+  override def serialize: Json = ???
+
+  override def deserialize[A >: Spaceship]: A = ???
+}*/
