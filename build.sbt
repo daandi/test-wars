@@ -1,6 +1,6 @@
-scalaVersion := "2.11.4"
+scalaVersion := Common.scalaVersion
 
-version := "0.4"
+version := Common.version
 
 lazy val universe = (project in file("universe"))
 

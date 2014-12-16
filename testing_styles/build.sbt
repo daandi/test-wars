@@ -1,8 +1,8 @@
 name := """testing_styles"""
 
-scalaVersion := "2.11.4"
+scalaVersion := Common.scalaVersion
 
-version := "0.4"
+version := Common.version
 
 // Change this to another test framework if you prefer
 libraryDependencies ++= Seq(
