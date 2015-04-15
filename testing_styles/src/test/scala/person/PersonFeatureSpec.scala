@@ -3,14 +3,7 @@ package person
 import biz.neumann.test_wars._
 import org.scalatest.{FeatureSpec, GivenWhenThen}
 
-/**
- * User: andi
- * Date: 15.10.14
- * Time: 16:44
- *
- *
- *
- */
+
 class PersonFeatureSpec extends  FeatureSpec with GivenWhenThen {
 
   info("As a Developer")
