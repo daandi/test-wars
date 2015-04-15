@@ -27,16 +27,19 @@ Person can change sides ad libitum
 
   def becomeEvil = {
     val anakin = Person("Anakin")
-    anakin.side mustEqual Neutral
-    anakin.side = Empire
-    anakin.side mustEqual Empire
+    anakin.side.mustEqual(Neutral).and {
+      anakin.side = Empire
+      anakin.side mustEqual Empire
+    }
   }
 
   def becomeRebel = {
     val anakin = Person("Han Solo")
-    anakin.side mustEqual Neutral
-    anakin.side = Rebels
-    anakin.side mustEqual Rebels
+    anakin.side.mustEqual(Neutral).and {
+      anakin.side = Rebels
+      anakin.side mustEqual Rebels
+    }
+
   }
 
   def person = Person("Honk")
