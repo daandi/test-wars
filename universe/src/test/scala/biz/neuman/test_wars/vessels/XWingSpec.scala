@@ -3,10 +3,10 @@ package biz.neuman.test_wars.vessels
 import biz.neumann.test_wars.{Rebels, Person}
 import biz.neumann.test_wars.vessels.{SpaceshipCompanion, XWing}
 import org.specs2.Specification
-import org.specs2.specification.Fragments
+import org.specs2.specification.core.{SpecStructure, Fragments}
 
 class XWingSpec extends Specification with ShipTestBlueprint[XWing] {
-  override def specificTests: Fragments =
+  override def specificTests: SpecStructure =
 s2"""
 XWing Specific Tests
   XWing needs a rebel pilot               $pilot

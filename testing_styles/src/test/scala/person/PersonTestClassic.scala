@@ -3,14 +3,6 @@ package person
 import biz.neumann.test_wars._
 import org.scalatest.FunSuite
 
-/**
- * User: andi
- * Date: 15.10.14
- * Time: 16:44
- *
- *
- *
- */
 class PersonTestClassic extends  FunSuite {
 
   test("Person can be created without exception") {

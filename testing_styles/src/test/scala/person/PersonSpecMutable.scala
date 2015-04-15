@@ -5,14 +5,6 @@ import biz.neumann.test_wars._
 import org.specs2.mutable.Specification
 import org.specs2.specification.Scope
 
-/**
- * User: andi
- * Date: 05.11.14
- * Time: 13:03
- *
- *
- *
- */
 class PersonSpecMutable extends Specification {
 
   "A Person" should {

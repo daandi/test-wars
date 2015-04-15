@@ -3,12 +3,12 @@ package biz.neuman.test_wars.vessels
 import biz.neumann.test_wars.{Neutral, Probability}
 import biz.neumann.test_wars.vessels._
 import org.specs2.Specification
-import org.specs2.specification.Fragments
+import org.specs2.specification.core.{SpecStructure, Fragments}
 
 trait ShipTestBlueprint[S <: Spaceship]  { self: Specification =>
 
   // Things you have to implement when you want to test
-  def specificTests : Fragments
+  def specificTests : SpecStructure
   def getInstance: S
   def spaceshipFactory :SpaceshipCompanion[S]
   def serializedRepresentation : String
@@ -27,7 +27,7 @@ Serialisation and Deserialisation of $ship
 """
 
   // plumbing, boilerplate
-  def is : Fragments  = specificTests.insert(generalTests)
+  def is : SpecStructure  = specificTests ^ generalTests
   lazy val instance : S = getInstance
   def ship = instance.getClass.getSimpleName
 

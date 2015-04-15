@@ -3,15 +3,7 @@ package person
 import biz.neumann.test_wars._
 import org.scalatest.{FlatSpec, ShouldMatchers}
 
-/**
- * User: andi
- * Date: 15.10.14
- * Time: 16:56
- *
- *
- *
- */
-class PersonFlatTest extends FlatSpec with ShouldMatchers{
+class PersonFlatTest extends FlatSpec with ShouldMatchers {
 
   "A Person" should "be created without exception" in {
     Person("Nobody") shouldBe a [Person]

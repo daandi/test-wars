@@ -3,13 +3,7 @@ package person
 import biz.neumann.test_wars._
 import org.specs2.Specification
 
-/**
- * Copyright (C) 2014 Clueda AG.
- * This work is proprietary and confidential. Any distribution,
- * reproduction, or modification is strictly prohibited under any
- * circumstances without the express prior written permission of Clueda
- * AG. All rights reserved.
- */
+
 class PersonSpec extends Specification {def is = s2"""
 Person
   can be created without exception            $create

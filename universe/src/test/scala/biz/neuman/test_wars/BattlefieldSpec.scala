@@ -11,9 +11,8 @@ import org.specs2.Specification
  * circumstances without the express prior written permission of Clueda
  * AG. All rights reserved.
  */
-class BattlefieldSpec extends Specification {def is=s2"""
+class BattlefieldSpec extends Specification {def is= sequential ^ s2"""
 The Battelfield
-  $sequential
   starts with no ships                              $startEmpty
   there can be a ship added                         $addShip
   ships are unique and can't be added twice         $shipsAreUnique

@@ -3,13 +3,6 @@ import biz.neumann.test_wars.vessels.Spaceship
 import org.specs2.Specification
 
 
-/**
- * Copyright (C) 2014 Clueda AG.
- * This work is proprietary and confidential. Any distribution,
- * reproduction, or modification is strictly prohibited under any
- * circumstances without the express prior written permission of Clueda
- * AG. All rights reserved.
- */
 class SpaceShipSpec extends Specification  {def is= s2"""
 A spaceship
   has shield                                                                  $hasShield
@@ -27,7 +20,7 @@ Spaceship Battle
   a ship can engage another ship will not end in an endless loop              $pending
   it will not engage if it is not Ok                                          $pending
   after being engaged by another ship it will engage the other ship
-  it will engage the other ship till one ship is no longer ok                 ${pending}
+  it will engage the other ship till one ship is no longer ok                 $pending
 """
 
 
